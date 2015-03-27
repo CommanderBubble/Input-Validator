@@ -8,7 +8,7 @@ NB: Currently getListInput is windows only as it uses a windows specific functio
 
 * Functions
 
-getLimitedInput
+getLimitedInput(...)
 
     args:
     unsigned int upper_bound
@@ -24,11 +24,11 @@ This function takes arguments to define an upper and lower (in that order) bound
 If specified, it will also print an input and error messages when requesting input and recieving invalid input respectively.
 if your application needs to capture the standard delimiter (\n) for any reason it can be changed.
 
-getListInput
+getListInput(...)
 
     args:
     unsigned int number_options
-    std::string input_message
+    std::string input_message = "  "
     
     returns:
     unsigned int
