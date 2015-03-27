@@ -8,7 +8,6 @@ NB: Currently getListInput is windows only as it uses a windows specific functio
 * Functions
 
 getLimitedInput
-args:
   unsigned int upper_bound
   unsigned int lower_bound = 1
   std::string input_message = ""
