@@ -17,7 +17,7 @@ int main() {
     std::string errorMessage = "Invalid number of Players\n";
 
     // get thge input from the user
-    input = getLimitedInput(upperLimit, lowerLimit, ss.str(), errorMessage);
+    input = get_limited_input(upperLimit, lowerLimit, ss.str(), errorMessage);
 
     // display the input recieved
     std::cout << "Number input: " << input << std::endl;
@@ -38,7 +38,7 @@ int main() {
     }
 
     // store the selected option
-    unsigned int returned = getListInput(options);
+    unsigned int returned = get_list_input(options);
 
     // print it to show our chosen option
     std::cout << "Returned value is: " << returned << std::endl;
