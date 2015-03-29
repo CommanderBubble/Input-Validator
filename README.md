@@ -16,7 +16,7 @@ get_limited_input(...)
     unsigned int upper_bound
     unsigned int lower_bound = 1
     std::string input_message = ""
-    std:;string error_message = ""
+    std::string error_message = ""
     char delimiter = '\n'
 
     returns:
