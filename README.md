@@ -2,7 +2,7 @@ Input-Validator
 
 Input-Validator is a simple collection of routines that can be used to get user input from the console in a relatively safe manner.
 
-As this is a very simple set of functions, usage is simple: include the files in your project and compile them into it. no library is provided as it is overkill for these functions at this time.
+As this is a very simple set of functions, usage is simple: include the header file in your project. no library is provided as it is overkill for these functions at this time.
 
 The functions take a number of arguments, and only allow input between the end conditions.
 
@@ -10,7 +10,7 @@ NB: Currently getListInput is windows only as it uses a windows specific functio
 
 * Functions
 
-getLimitedInput(...)
+get_limited_input(...)
 
     args:
     unsigned int upper_bound
@@ -26,7 +26,7 @@ This function takes arguments to define an upper and lower (in that order) bound
 If specified, it will also print an input and error messages when requesting input and receiving invalid input respectively.
 if your application needs to capture the standard delimiter (\n) for any reason it can be changed.
 
-getListInput(...)
+get_list_input(...)
 
     args:
     unsigned int number_options
