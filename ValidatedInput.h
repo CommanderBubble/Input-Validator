@@ -104,7 +104,6 @@ inline unsigned int get_list_input(unsigned int number_options, std::string inpu
 
         for (unsigned int i = 0; i < read; i++) {
             if (!isdigit(buf[i])) {
-                std::cout << (unsigned int)buf[i] << std::endl;
                 if (static_cast<int>(buf[i]) == 8) {
                     if (entered_digits > 0) {
                         working = (working - (working % 10)) / 10;
