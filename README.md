@@ -1,5 +1,8 @@
 Input-Validator
 
+NOTE: Currently this header uses windows specific calls to the console, and will ONLY run on windows
+it should be relatively easy to port to linux, feel free to do so and submit a pull request, as i do not have a linux distro to test with currently.
+
 Input-Validator is a simple collection of routines that can be used to get user input from the console in a relatively safe manner.
 
 As this is a very simple set of functions, usage is simple: include the header file in your project. no library is provided as it is overkill for these functions at this time.
@@ -15,9 +18,8 @@ get_limited_input(...)
     args:
     unsigned int upper_bound
     unsigned int lower_bound = 1
-    std::string input_message = ""
-    std::string error_message = ""
-    char delimiter = '\n'
+    const std::string& input_message = ""
+    const std::string& error_message = ""
 
     returns:
     unsigned int
@@ -30,7 +32,7 @@ get_list_input(...)
 
     args:
     unsigned int number_options
-    std::string input_message = "  "
+    std::string& input_message = "  "
     
     returns:
     unsigned int
