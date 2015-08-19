@@ -59,12 +59,12 @@ inline unsigned int get_list_input(const unsigned int number_options, const std:
         error_exit("GetStdHandle", hStdin, fdwSaveOldMode);
 
     // Save the current input mode, to be restored on exit.
-    if (! GetConsoleMode(hStdin, &fdwSaveOldMode) )
+    if (!GetConsoleMode(hStdin, &fdwSaveOldMode) )
         error_exit("GetConsoleMode", hStdin, fdwSaveOldMode);
 
     // Enable the window input events.
     fdwMode = ENABLE_WINDOW_INPUT;
-    if (! SetConsoleMode(hStdin, fdwMode) )
+    if (!SetConsoleMode(hStdin, fdwMode) )
         error_exit("SetConsoleMode", hStdin, fdwSaveOldMode);
 
     // Setup the variables
