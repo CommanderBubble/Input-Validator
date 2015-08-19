@@ -6,7 +6,7 @@ As this is a very simple set of functions, usage is simple: include the header f
 
 The functions take a number of arguments, and only allow input between the end conditions.
 
-## NOTE
+#### Note
 Currently this header uses Microsoft Windows specific calls to the console, and will ONLY run on Windows (the second function specifically). It should be relatively easy to port to linux (it just needs to catch character input), feel free to do so and submit a pull request, as I do not have a linux distro to test with currently.
 
 ## Functions
