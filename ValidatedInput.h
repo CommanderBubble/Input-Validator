@@ -12,25 +12,23 @@ inline unsigned int get_limited_input(const unsigned int upper_limit, const unsi
     std::string temp;
 
     while (!(ret >= lower_limit and ret <= upper_limit)) {
-        if (input_message != "") {
+        if (input_message != "")
             std::cout << input_message;
-        }
 
         ret = 0;
 
         getline(std::cin, temp);
 
-        for (unsigned int i = 0; i < temp.size(); i++) {
+        for (unsigned int i = 0; i < temp.size(); i++)
             if (isdigit(temp.c_str()[i]))
                 ret = ret * 10 + (static_cast<unsigned int>(temp.c_str()[i]) - 48);
             else
                 break;
-        }
 
-        if (!(ret >= lower_limit and ret <= upper_limit) and error_message != "") {
+        if (!(ret >= lower_limit and ret <= upper_limit) and error_message != "")
             std::cout << error_message << std::endl;
-        }
     }
+
     return ret;
 }
 
